@@ -8,10 +8,6 @@ import lombok.EqualsAndHashCode;
 public class Atividade extends Conteudo {
   private int cargaHoraria;
 
-  public Atividade(String titulo) {
-    super(titulo);
-  }
-
   @Override
   public double calcularXp() {
     return super.calcularXp() * cargaHoraria;

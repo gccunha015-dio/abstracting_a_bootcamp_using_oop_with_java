@@ -1,14 +1,14 @@
 package dio.bootcamp.domain;
 
+import java.time.LocalDate;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
 public class Mentoria extends Conteudo {
-  public Mentoria(String titulo) {
-    super(titulo);
-  }
+  private LocalDate data;
 
   @Override
   public double calcularXp() {
